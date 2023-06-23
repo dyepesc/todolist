@@ -1,8 +1,9 @@
+import './TodoItems.css';
 
 function TodoItem(props) {
     return (
       <li>
-        <span>V</span>
+        <p>V</p>
         <p>{ props.text }</p>
         <p>X</p>
       </li>
