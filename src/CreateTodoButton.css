@@ -1,0 +1,20 @@
+.btndiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btncrear {
+    list-style: none;
+    background: #82E0AA;
+    padding: 5px;
+    width: 100px;
+    height: 35px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}

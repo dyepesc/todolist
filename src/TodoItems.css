@@ -1,3 +1,6 @@
+* {
+    background-color: #E5E7E9;
+}
 li {
     /* background-color: blanchedalmond; */
     display: flex;
@@ -6,22 +9,40 @@ li {
     align-items: center;
     padding: 0;
     margin: 0;
-    list-style: none;
+    list-style: none; 
     
 }
 p {
-    background: tomato;
+    background: #F8F9F9;
     padding: 5px;
-    width: 200px;
-    height: 150px;
+    width: 50px;
+    height: 50px;
     margin-top: 10px;
-    line-height: 150px;
+    line-height: 50px;
     color: black;
     font-weight: bold;
     font-size: 20px;
     text-align: center;
   }
   .propis {
-    /* background: tomato; */
+    background: #F8F9F9;
+    width: 300px;
+    height: 50px;
 
+  }
+  .check {
+        cursor: pointer;
+  }
+  .check-active {
+    /* text-decoration:line-through; */
+    color: #4caf50;
+  }
+  .check-completed {
+    text-decoration: line-through;
+  }
+  .eliminar {
+    cursor: pointer;
+  }
+  .eliminar:hover {
+    color: red;
   }

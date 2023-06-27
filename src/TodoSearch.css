@@ -1,0 +1,23 @@
+.centrosearch {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+}
+.buscar {
+    list-style: none;
+    background: #F8F9F9;
+    padding: 5px;
+    width: 400px;
+    height: 50px;
+    margin-top: 10px;
+    line-height: 150px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 6px;
+    margin-left: 40px;
+}
