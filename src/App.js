@@ -11,13 +11,28 @@ const defaultTodos = [
   { text: "tomar el curso de intro a react", completed: false},
   { text: "llorar con la llorona", completed: false},
   { text: "lalalala", completed: false},
+  { text: "usar estados derivados", completed: false},
 ];
 
 function App() {
+  const [todos, setTodos] = React.useState(defaultTodos);
+  const [searchValue, setSearchValue] = React.useState('');
+
+  const completedTodos = todos.filter(todo => !!todo.completed).length;
+  const totalTodos = todos.length;
+
+  console.log("los usuarios buscan todos de " + searchValue);
+
   return (
     <React.Fragment>
-      <TodoCounter completed = {16} total = {25}/>
-      <TodoSearch />
+      <TodoCounter 
+        completed = {completedTodos} 
+        total = {totalTodos}
+        />
+      <TodoSearch 
+        searchValue = {searchValue}
+        setSearchValue = {setSearchValue}
+      />
 
       <TodoList> 
         { defaultTodos.map(todo => (
@@ -27,7 +42,7 @@ function App() {
           completed = {todo.completed}
           />
         ))}
-        {[<TodoCounter />, <TodoList />]}
+        {/* {[<TodoCounter />, <TodoList />]} */}
       </TodoList>
 
       <CreateTodoButton />
