@@ -1,17 +1,17 @@
-
+import React from 'react';
 import { TodoCounter } from './TodoCounter';
 import { TodoSearch } from './TodoSearch';
 import { TodoList } from './TodoList';
 import { TodoItem } from './TodoItem';
 import { CreateTodoButton } from './CreateTodoButton';
-import React from 'react';
+
 
 const defaultTodos = [
   { text: "cortar cebolla", completed: true},
   { text: "tomar el curso de intro a react", completed: false},
   { text: "llorar con la llorona", completed: false},
   { text: "lalalala", completed: false},
-  { text: "usar estados derivados", completed: false},
+  { text: "usar estados derivados", completed: true},
 ];
 
 function App() {
@@ -29,7 +29,24 @@ function App() {
     }
   );
 
-  console.log("los usuarios buscan todos de " + searchValue);
+  const completeTodo = (text) => {
+    const newTodos = [...todos];
+    const todoIndex = newTodos.findIndex(
+      (todo) => todo.text == text
+    );
+    newTodos[todoIndex].completed = true;
+    setTodos(newTodos);
+  };
+
+    const deleteTodo=(text) => { 
+      const newTodos = [...todos];
+      const todoIndex = newTodos.findIndex(
+        (todo) => todo.text == text
+        );
+      newTodos.splice(todoIndex,1);
+      setTodos(newTodos);
+
+  };
 
   return (
     <React.Fragment>
@@ -48,6 +65,8 @@ function App() {
           key = { todo.text } 
           text = {todo.text}
           completed = {todo.completed}
+          onComplete = {() => completeTodo(todo.text)}
+          onDelete={() => deleteTodo(todo.text)}
           />
         ))}
         {/* {[<TodoCounter />, <TodoList />]} */}
