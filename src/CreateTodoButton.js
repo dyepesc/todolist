@@ -1,15 +1,18 @@
 import './CreateTodoButton.css';
 
 function CreateTodoButton() {
-    return (
-        <div className='btndiv'>
-            <button className="btncrear"
-            onClick={
-                () => console.log('le diste clic')
-            }
-            >Crear</button>
-        </div>
-    );
-  }
+  return (
+    <button
+      className="CreateTodoButton"
+      onClick={
+        (event) => {
+          console.log('le diste click')
+          console.log(event)
+          console.log(event.target)
+        }
+      }
+    >+</button>
+  );
+}
 
-  export { CreateTodoButton };
+export { CreateTodoButton };
