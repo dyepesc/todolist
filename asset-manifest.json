@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/git@github.com:dyepesc/todolist/static/css/main.e890fbfc.css",
-    "main.js": "/git@github.com:dyepesc/todolist/static/js/main.7050512b.js",
-    "index.html": "/git@github.com:dyepesc/todolist/index.html",
-    "static/media/delete.svg": "/git@github.com:dyepesc/todolist/static/media/delete.7018c4465589031bd51c8efbe21df9ca.svg",
-    "static/media/check.svg": "/git@github.com:dyepesc/todolist/static/media/check.e9a948bba52a34123d2ed7aeda0ea495.svg",
-    "main.e890fbfc.css.map": "/git@github.com:dyepesc/todolist/static/css/main.e890fbfc.css.map",
-    "main.7050512b.js.map": "/git@github.com:dyepesc/todolist/static/js/main.7050512b.js.map"
+    "main.css": "/todolist/static/css/main.e890fbfc.css",
+    "main.js": "/todolist/static/js/main.23f6b7ab.js",
+    "index.html": "/todolist/index.html",
+    "static/media/delete.svg": "/todolist/static/media/delete.7018c4465589031bd51c8efbe21df9ca.svg",
+    "static/media/check.svg": "/todolist/static/media/check.e9a948bba52a34123d2ed7aeda0ea495.svg",
+    "main.e890fbfc.css.map": "/todolist/static/css/main.e890fbfc.css.map",
+    "main.23f6b7ab.js.map": "/todolist/static/js/main.23f6b7ab.js.map"
   },
   "entrypoints": [
     "static/css/main.e890fbfc.css",
-    "static/js/main.7050512b.js"
+    "static/js/main.23f6b7ab.js"
   ]
 }
