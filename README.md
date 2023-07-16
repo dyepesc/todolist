@@ -1,4 +1,4 @@
-# Repositorio base del Curso de Introducción a React.js en Platzi
+# Repositorio base del Curso de Introducción a React.js 
 
 ¡Hola querido usuario!
 
@@ -6,7 +6,7 @@ En este repositorio encontrarás el código de todas las clases del [Curso de In
 
 La rama principal contiene el código con el que eempezamos el curso. En las demás ramas encontrarás el código de las siguientes clases y finalmente el deploy de la aplicación.
 
-Adicional, he cambiado el css para darle mi toque personal.
+Adicional, he cambiado el css para darle mi toque personal (con el Multivero de la locura).
 
 ## Getting Started with Create React App
 
