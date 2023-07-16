@@ -10,7 +10,7 @@ function TodoSearch() {
   
   return (
     <input
-      placeholder="Escribe la tarea que quieres buscar"
+      placeholder="¡Escribe el universo que quieres encontrar!"
       className="TodoSearch"
       value={searchValue}
       onChange={(event) => {

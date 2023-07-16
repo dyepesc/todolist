@@ -9,8 +9,10 @@ function TodoCounter() {
   } = React.useContext(TodoContext);
   
   return (
+
     <h1 className="TodoCounter">
-      Has completado <span>{completedTodos}</span> de <span>{totalTodos}</span> TODOs
+      <span>Bienvenido al multiverso<br/></span>
+      Has estado en <span>{completedTodos}</span> Universos de <span>{totalTodos}</span>
     </h1>
   );
 }
