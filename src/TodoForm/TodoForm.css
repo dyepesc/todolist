@@ -1,12 +1,14 @@
 form {
     width:90%;
     max-width:300px;
-    background-color:#fff;
+    background-color: #C6C7D8;
+    color:#34495E;
     padding:33px 40px;
     display:flex;
     justify-content:center;
     align-items:center;
-    flex-direction:column
+    flex-direction:column;
+    border-radius: 20px;
 }
 label {
     text-align:center;
@@ -32,7 +34,7 @@ textarea::placeholder {
     font-weight:400
 }
 textarea:focus {
-    outline-color:#61dafa
+    outline-color:#34495E;
 }
 .TodoForm-buttonContainer {
     margin-top:14px;
@@ -53,7 +55,7 @@ textarea:focus {
         font-family:montserrat
     }
     .TodoForm-button--add {
-        background:#61dafa;
+        background:#0880F7;
         box-shadow:0 5px 25px rgba(97,218,250,.5)
     }
     .TodoForm-button--cancel {
